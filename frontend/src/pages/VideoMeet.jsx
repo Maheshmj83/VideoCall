@@ -129,7 +129,7 @@ export default function VideoMeetComponent() {
       getUserMedia();
       console.log("SET STATE HAS ", video, audio);
     }
-  }, [video, audio, getUserMedia]);
+  }, [video, audio]);
   let getMedia = () => {
     setVideo(videoAvailable);
     setAudio(audioAvailable);
