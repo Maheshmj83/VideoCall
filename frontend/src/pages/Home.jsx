@@ -47,7 +47,7 @@ function HomeComponent() {
       <div className="meetContainer">
         <div className="leftPanel">
           <div>
-            <h2>Providing Quality Video Call Just Like Quality Education</h2>
+            <h2 style={{marginBottom: "1rem"}}>Providing Quality Video Call</h2>
 
             <div style={{ display: "flex", gap: "10px" }}>
               <TextField
