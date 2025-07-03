@@ -64,7 +64,8 @@ export default function Authentication() {
           sm={4}
           md={7}
           sx={{
-              backgroundImage: 'url("https://images.unsplash.com/photo-1616587893930-b9c7ed458e6c?auto=format&fit=crop&w=1470&q=80")',
+            backgroundImage:
+              "url(https://source.unsplash.com/random?wallpapers)",
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
               t.palette.mode === "light"

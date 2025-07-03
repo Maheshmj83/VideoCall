@@ -1,11 +1,11 @@
 import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import LandingPage from "./pages/LandingPage.jsx";
-import Authentication from "./pages/Authentication.jsx";
+import LandingPage from "./pages/landing";
+import Authentication from "./pages/authentication";
 import { AuthProvider } from "./contexts/AuthContext";
-import VideoMeetComponent from "./pages/VideoMeet.jsx";
-import HomeComponent from "./pages/Home.jsx";
-import History from "./pages/History.jsx";
+import VideoMeetComponent from "./pages/VideoMeet";
+import HomeComponent from "./pages/home";
+import History from "./pages/history";
 
 function App() {
   return (

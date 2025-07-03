@@ -21,17 +21,14 @@ export const connectToSocket = (server) => {
       if (connections[path] === undefined) {
         connections[path] = [];
       }
-
-      // Add current user to the path list
       connections[path].push(socket.id);
 
       timeOnline[socket.id] = new Date();
 
-      // Notify all other users in the same path
+      // connections[path].forEach(elem => {
+      //     io.to(elem)
+      // })
 
-      // connections[path].forEach((elem) => {
-      //   io.to(elem).emit("user-joined", socket.id, connections[path]);
-      // });
       for (let a = 0; a < connections[path].length; a++) {
         io.to(connections[path][a]).emit(
           "user-joined",
